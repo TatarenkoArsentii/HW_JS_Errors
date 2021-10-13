@@ -4,10 +4,28 @@
   box-sizing: border-box;
   font-size: 18px;
 }
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
 input {
   outline: none;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(63, 177, 69);
+}
+input::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+select {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(63, 177, 69);
 }
 .div {
   width: 300px;
@@ -15,12 +33,19 @@ input {
   background-color: aqua;
   margin: 50px;
 }
-
+ul {
+  width: 200px;
+}
 li {
   background-color: blue;
   border: 2px solid black;
+  width: 200px;
+  list-style: none;
+  height: 50px;
 }
 
-body {
-  background-color: yellowgreen;
+button {
+  border-radius: 5px;
+  background-color: chartreuse;
+  padding: 10px;
 }
